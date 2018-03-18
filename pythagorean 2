@@ -1,0 +1,12 @@
+a = int ( input ( "Please enter a number: " ) )
+b = int ( input ( "Please enter another number: " ) )
+c = int ( input ( "Please enter a third number: " ) )
+
+def isTriple ( a, b, c ):
+    if a ** 2 + b ** 2 == c ** 2 or a ** 2 + c ** 2 == b ** 2 or b ** 2 + c ** 2 == a ** 2:
+        result = print ("The numbers " + str(a), str(b), str(c) + " form a Pythagorean triple")
+        return result
+    else:
+        result = print ("The numbers " + str(a), str(b), str(c) + " do not form a Pythagorean triple")
+        return result
+
