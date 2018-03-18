@@ -1,12 +1,18 @@
+# I, Bartosz Wojcik, 000033686, certify that all code submitted is my own work; that I have not copied it from any other source.  I also certify that I have not allowed my work to be copied by others.
+
+
 a = int ( input ( "Please enter a number: " ) )
 b = int ( input ( "Please enter another number: " ) )
 c = int ( input ( "Please enter a third number: " ) )
 
 def isTriple ( a, b, c ):
     if a ** 2 + b ** 2 == c ** 2 or a ** 2 + c ** 2 == b ** 2 or b ** 2 + c ** 2 == a ** 2:
-        result = print ("The numbers " + str(a), str(b), str(c) + " form a Pythagorean triple")
-        return result
-    else:
-        result = print ("The numbers " + str(a), str(b), str(c) + " do not form a Pythagorean triple")
-        return result
+        return True
+    return False
+
+if isTriple (a, b ,c ):
+        print ( "The numbers " + str( a ), str( b ), str( c ) + " form a Pythagorean triple" )
+else:
+        print ( "The numbers " + str( a ), str( b ), str( c ) + " do not form a Pythagorean triple" )
+                
 
